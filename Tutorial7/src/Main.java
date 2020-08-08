@@ -19,11 +19,11 @@ public class Main {
 			Scanner sc2 = new Scanner(file);
 			while(sc2.hasNextInt()) {
 				System.out.println(sc2.nextInt() * 100);
+				sc2.close();
 			}
 		} catch (FileNotFoundException e) {
 			System.out.println("파일을 읽어오는 도중에 오류가 발생했습니다.");
 		}
-		
 	}
 
 }
